@@ -1,8 +1,13 @@
 <%- include('partials/header')%>>
    <div>
      <h1>Convert your Words to text</h1>
-       <label for="convert_text"></label><textarea name="voice" id="convert_text"></textarea>
-       <button id="click_to_record">Click to Record</button>
+       <form action="post/createPost" method='POST'>
+           <label for="convert_text"></label><textarea id="convert_text"></textarea>
+           <button id="click_to_record">Click to Record</button><button type="submit">Save</button>
+       </form>
 
    </div>
-   <script src="js/main"></script>
+
+  <script src="js/main.js"></script>
+
+
